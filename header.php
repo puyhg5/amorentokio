@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title><?php bloginfo('sitename'); ?></title>
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" type="image/png" href="img/favicon.ico" />
+    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.min.css">
@@ -33,10 +33,10 @@
     </header>
     <nav class="mobile-nav-cover">
       <ul class="mobile-nav">
-        <li><a class="nav-item-link mobile-item-nav" href="index.html"> inicio</a></li>
-        <li><a class="nav-item-link mobile-item-nav" href="recetas.html"> recetas</a></li>
-        <li><a class="nav-item-link mobile-item-nav" href="about.html"> sobre mí</a></li>
-        <li><a class="nav-item-link mobile-item-nav" href="contact.html"> contacto</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="<?php bloginfo('url'); ?>"> inicio</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="<?php bloginfo('url'); ?>/receta"> recetas</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="<?php bloginfo('url'); ?>/about"> sobre mí</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="<?php bloginfo('url'); ?>/contact"> contacto</a></li>
       </ul>
       <div class="search-item-mobile">
         <i class="fa fa-search" aria-hidden="true"></i>
