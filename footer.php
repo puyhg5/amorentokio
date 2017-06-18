@@ -15,26 +15,11 @@
               </div>
             </div>
           </div>
-          <div class="instagram-grid">
-            <div class="item-grid">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-            <div class="item-grid item-grid-down">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-            <div class="item-grid">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-            <div class="item-grid item-grid-down">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-            <div class="item-grid">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-            <div class="item-grid item-grid-down">
-              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
-            </div>
-          </div>
+          <?php if(function_exists('simple_instagram')){ ?>
+            <?php echo do_shortcode('[simple-instagram limit="6"]'); ?>
+          <?php }else{ ?>
+            Es necesarion instalar plugin <a href="https://es.wordpress.org/plugins/easy-simple-instagram/">Simple Instagram Feed</a>
+          <?php } ?>
         </div>
       </div>
       <div class="container-rrss">

@@ -52,7 +52,7 @@ $terms = get_terms( array(
       <?php } /* end while */ ?>
     <?php }else{ /* Si no hay post que mostar debería salir algun mensaje de advertencia */ ?>
       <div class="general-content">
-        Ups!
+        Ups! Un lindo 404 apareció!
       </div>
     <?php } ?>
   </div>

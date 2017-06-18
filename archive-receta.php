@@ -52,7 +52,7 @@ $terms = get_terms( array(
       <?php } ?>
     </div>
   <?php }else{ /* Si no hay terms que mostar */ ?>
-    // No hay cocinas que mostrar
+    // No hay cocinas que mostrar. Por favor registre los tipos de cocina en wp-admin
   <?php } ?>
 </div>
 

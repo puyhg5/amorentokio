@@ -67,7 +67,7 @@ $post_counter = 0;
       <?php } /* end bloque grid */ ?>
     <?php } /* end while */ ?>
   <?php }else{ /* Si no hay post que mostar debería salir algun mensaje de advertencia */ ?>
-    
+    // No hay post que mostrar. Por favor regitre algún post
   <?php } ?>
 
 </div>

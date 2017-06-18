@@ -29,7 +29,11 @@ $terms = get_terms( array(
     </ul>
 
     <p><strong>03. M</strong>ás populares</p>
-    <?php if (function_exists('wpp_get_mostpopular')) wpp_get_mostpopular(array('limit' => 3)); ?>
+    <?php if (function_exists('wpp_get_mostpopular')) { ?>
+      <?php wpp_get_mostpopular(array('limit' => 3)); ?>
+    <?php }else{ ?>
+      Es necesario instalar plugin <a href="https://es.wordpress.org/plugins/contact-form-7/">Contact Form 7</a>
+    <?php } ?>
 
   </aside>
 

@@ -48,6 +48,7 @@ $term = get_term(get_queried_object()->term_id, 'cocinas');
       <?php } ?>
     </div>
   <?php }else{ /* Si no hay post en este tipo de cocina */ ?>
+    // No hay recetas clasificadas con este tipo de cocina
   <?php } ?>
 
   <?php
@@ -62,12 +63,13 @@ $term = get_term(get_queried_object()->term_id, 'cocinas');
     'type' => 'array',
   ) );
   ?>
-
-  <p class="list-subcat">
-    <?php foreach ($paglinks as $pl) {?>
-      <?php echo $pl;?>.
-    <?php } ?>
-  </p>
+  <?php if($paglinks){ ?>
+    <p class="list-subcat">
+      <?php foreach ($paglinks as $pl) {?>
+        <?php echo $pl;?>.
+      <?php } ?>
+    </p>
+  <?php } ?>
 </div>
 
 <?php get_footer(); ?>
