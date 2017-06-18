@@ -1,0 +1,39 @@
+.section-about{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  position: relative;
+  top: -30px;
+}
+.photo-about{
+  width: 45%;
+}
+.img-about{
+  width: 100%;
+}
+.text-about{
+  width: 45%;
+}
+.description-about{
+  text-align: justify;
+}
+.description-about{
+  letter-spacing: 2px;
+}
+
+@media (max-width: 780px) {
+  .section-about{
+    flex-direction: column;
+    position: static;
+    padding: 30px 0 0;
+  }
+  .photo-about{
+    width: 100%;
+  }
+  .text-about{
+    width: 100%;
+  }
+}

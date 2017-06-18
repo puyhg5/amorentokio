@@ -4,49 +4,44 @@
     <meta charset="utf-8">
     <title><?php bloginfo('sitename'); ?></title>
     <meta name="viewport" content="width=device-width">
-    <meta name="description" content="<?php bloginfo('description'); ?>">
-
-    <!-- Social Sharing -->
-    <meta name="twitter:card" content="summary"> 
-    <meta name="twitter:site" content="@"> 
-    <meta name="twitter:title" content="<?php wp_title(); ?>"> 
-    <meta name="twitter:creator" content="@">
-    <?php if (is_single()) { ?>  
-      <meta property="og:url" content="<?php the_permalink() ?>">  
-      <meta property="og:title" content="<?php single_post_title(''); ?>">  
-      <meta property="og:description" content="<?php echo strip_tags(get_the_excerpt($post->ID)); ?>">  
-      <meta property="og:type" content="article">  
-    <?php } else { ?>  
-      <meta property="og:site_name" content="<?php bloginfo('name'); ?>">  
-      <meta property="og:description" content="<?php bloginfo('description'); ?>">  
-      <meta property="og:type" content="website">  
-    <?php } ?>
-    
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico" />
-    
-    <!-- Styles -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.ico" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css">
-  
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600" rel="stylesheet">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/font-awesome/css/font-awesome.min.css">
+    <?php wp_head(); ?>
   </head>
-  <?php wp_head(); ?>
-  <body <?php body_class(); ?>>
+  <body>
     <header class="header">
-      <div class="center-header">
-        <div class="logo">
-          <img class= "logo-img" src="<?php echo get_template_directory_uri(); ?>/assets/img/Logotipo_AmorEnTokio.png" alt="Logotipo Amor en Tokio">
-        </div>
-        <nav>
-          <?php if (has_nav_menu('menutop')) { /* Solo mostrar menu si este se ha creado en el admin */ ?>
-            <?php wp_nav_menu(array('theme_location'=>'menutop', 'container'=>false, 'menu_class'=>'list-nav', 'after'=>'<span class="line">___</span>'));?>
-
-            <?php /* Para añadir el search creo otro <ul> ya que es lo más sencillo */ ?>
-            <ul class="list-nav">
-              <li class="nav-items"><a href="#"><i class="fa fa-search" aria-hidden="true"></i> <span class="line">___</span></a></li>
-            </ul>
-          <?php } ?>
-        </nav>
-      </div>
+      <a href="<?php bloginfo('url'); ?>" class="logo">
+        <img class="img-logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo-amor-en-tokio.svg" alt="Amor en Tokio">
+      </a>
+      <ul class="nav">
+        <li><a class="nav-item-link desktop-item-nav" href="<?php bloginfo('url'); ?>">inicio </a></li>
+        <li><a class="nav-item-link desktop-item-nav" href="<?php bloginfo('url'); ?>/receta">recetas </a></li>
+        <li><a class="nav-item-link desktop-item-nav" href="<?php bloginfo('url'); ?>/about">sobre mí </a></li>
+        <li><a class="nav-item-link desktop-item-nav" href="<?php bloginfo('url'); ?>/contact">contacto </a></li>
+        <li>
+          <button type="button" name"search-button" class="nav-item-link desktop-item-nav search-item-nav">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          </button>
+          <input class="search-input-desktop" type="text" name="input-search-desktop" placeholder="search">
+        </li>
+      </ul>
+      <button type="button" name="button-nav" class="btn-nav">
+        <img src="img/burguer-menu.svg" alt="Menu navegación">
+      </button>
     </header>
+    <nav class="mobile-nav-cover">
+      <ul class="mobile-nav">
+        <li><a class="nav-item-link mobile-item-nav" href="index.html"> inicio</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="recetas.html"> recetas</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="about.html"> sobre mí</a></li>
+        <li><a class="nav-item-link mobile-item-nav" href="contact.html"> contacto</a></li>
+      </ul>
+      <div class="search-item-mobile">
+        <i class="fa fa-search" aria-hidden="true"></i>
+        <input class="search-input-mobile" type="text" name="input-search-mobile" placeholder="buscar">
+      </div>
+    </nav>
+
+    <main class="general-page">

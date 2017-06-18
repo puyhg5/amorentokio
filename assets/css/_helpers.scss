@@ -1,0 +1,21 @@
+.active{
+  display: block;
+}
+.active-search{
+  display: inline;
+}
+.inactive{
+  display: none;
+}
+.underline{
+  text-decoration: underline;
+  font-weight: 600;
+}
+.no-margin{
+  margin: 0;
+}
+.line{
+  width: 20px;
+  position: relative;
+  top: 4px;
+}

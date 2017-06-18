@@ -1,0 +1,11 @@
+.page-post{
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.current-post{
+  width: 70%;
+  position: relative;
+  top: -30px;
+}

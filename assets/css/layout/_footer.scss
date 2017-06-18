@@ -1,0 +1,143 @@
+.container-newsletter-instagram{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: -120px;
+}
+.container-rrss{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.instagram-newsletter{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.text-input-newsletter{
+  display: flex;
+}
+.input-newsletter{
+  background: none;
+  border: none;
+  border-bottom: 1px solid black;
+  outline: none;
+}
+.instagram-link{
+  color: black;
+}
+.small-newsletter{
+  font-size: 12px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+.instagram-grid{
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.item-grid{
+  width: 14%;
+}
+.img-item-grid{
+  width: 100%;
+}
+.item-grid-down{
+  position: relative;
+  top: 60px;
+}
+.list-rrss{
+  list-style: none;
+  color: black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  padding: 0;
+  margin-bottom: 30px;
+}
+.rrss-link{
+  color: black;
+  transition: color 0.5s;
+  font-weight: 600;
+}
+.rrss-link:hover{
+  color: gray;
+}
+.melon-link{
+  color: black;
+}
+.melon-link:hover{
+  border-bottom: 2px solid gray;
+}
+.copyright{
+  display: flex;
+}
+.text-copyright{
+  margin-top: 0;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+@media (max-width: 780px) {
+  .mobile-color{
+    width: 100%;
+    background-color: #f6efe4;
+    padding-bottom: 20px;
+  }
+  .container-newsletter-instagram{
+    position: static;
+    padding-top: 20px;
+  }
+  .instagram-newsletter{
+    flex-direction: column;
+    align-items: center;
+  }
+  .name-instagram{
+    order: 2;
+  }
+  .newsletter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-input-newsletter{
+    flex-direction: column;
+  }
+  .input-newsletter{
+    margin-bottom: 20px;
+  }
+  .item-grid{
+    width: 45%;
+  }
+  .list-rrss{
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin-top: 0;
+  }
+  .list-rrss li{
+    width: 100%;
+    text-align: center;
+  }
+  .rrss-link{
+    width: 100%;
+    display: inline-block;
+    padding: 10px 0px;
+    border-bottom: 1px solid black;
+  }
+  .copyright{
+    flex-direction: column;
+    align-items: center;
+  }
+  .instagram-grid{
+    margin-bottom: 60px;
+  }
+}

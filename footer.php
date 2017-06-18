@@ -1,49 +1,58 @@
+    </main>
+
     <footer class="footer">
-      <div class="instagram">
-        <div class="instagram-newsletter">
-          <p><i class="fa fa-instagram" aria-hidden="true"></i> <span class="underline">s</span>andraholmes</p>
-          <div class="newsletter">
-            <p><i class="fa fa-envelope-open-o" aria-hidden="true"></i> <span class="underline">s</span>uscríbete</p>
-            <p class="small-newsletter">Recibe Amor en Tokio en tu email:<input class="input-newsletter" type="text" name="" value=""></p>
+      <div class="mobile-color">
+        <div class="container-newsletter-instagram">
+          <div class="instagram-newsletter">
+            <div class="name-instagram">
+              <a class="instagram-link letter-spacing" href="https://www.instagram.com/sandraholmes" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i> <span class="underline">s</span>andraholmes</a>
+            </div>
+            <div class="newsletter">
+              <p class="no-margin letter-spacing"><i class="fa fa-envelope-open-o" aria-hidden="true"></i> suscríbete</p>
+              <div class="text-input-newsletter">
+                <p class="small-newsletter">Recibe Amor en Tokio en tu email:</p>
+                <input class="input-newsletter" type="text" name="input-newsletter">
+              </div>
+            </div>
+          </div>
+          <div class="instagram-grid">
+            <div class="item-grid">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
+            <div class="item-grid item-grid-down">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
+            <div class="item-grid">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
+            <div class="item-grid item-grid-down">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
+            <div class="item-grid">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
+            <div class="item-grid item-grid-down">
+              <img class="img-item-grid" src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="Imagen Instagram">
+            </div>
           </div>
         </div>
-        <div class="grid-photos">
-          <div class="item-grid-photos up">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-          <div class="item-grid-photos down">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-          <div class="item-grid-photos up">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-          <div class="item-grid-photos down">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-          <div class="item-grid-photos up">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-          <div class="item-grid-photos down">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/img2.png" alt="">
-          </div>
-
-        </div>
-
       </div>
-      <ul class="list-rrss">
-        <a href="#"><li><i class="fa fa-instagram" aria-hidden="true"></i> instagram</li></a>
-        <a href="#"><li><i class="fa fa-pinterest-p" aria-hidden="true"></i> pinterest</li></a>
-        <a href="#"><li><i class="fa fa-facebook" aria-hidden="true"></i> facebook</li></a>
-        <a href="#"><li><i class="fa fa-twitter" aria-hidden="true"></i> twitter</li></a>
-        <a href="#"><li><i class="fa fa-youtube-play" aria-hidden="true"></i> youtube</li></a>
-      </ul>
-      <p class="copyright"><?php echo get_the_date('Y'); ?> © amorentokio. diseño melon blanc.</p>
+      <div class="container-rrss">
+        <ul class="list-rrss">
+          <li><a class="rrss-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> instagram</a></li>
+          <li><a class="rrss-link" href="#"><i class="fa fa-pinterest-p" aria-hidden="true"></i> pinterest</a></li>
+          <li><a class="rrss-link" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> facebook</a></li>
+          <li><a class="rrss-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> twitter</a></li>
+          <li><a class="rrss-link" href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i> youtube</a></li>
+        </ul>
+        <div class="copyright">
+          <p class="no-margin">2017 © amorentokio.</p>
+          <p class="text-copyright">diseño <a class="melon-link" href="http://melonblanc.com/" target="_blank">melon blanc</a>.</p>
+        </div>
+      </div>
     </footer>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/nav.js" charset="utf-8"></script>
 
   </body>
 </html>

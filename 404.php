@@ -38,9 +38,7 @@ $terms = get_terms( array(
       <?php while (have_posts()) { the_post(); ?>
           <div class="last-post-img-date">
             <div class="general-img-post">
-              <a href="<?php echo get_term_link($term,'category');?>">
-                <img src="<?php echo get_the_post_thumbnail_url();?>" alt="">
-              </a>
+              <img src="<?php echo get_the_post_thumbnail_url();?>" alt="">
             </div>
             <div class="general-date">
               <div class="general-date-reverse">
@@ -53,7 +51,9 @@ $terms = get_terms( array(
           <div class="general-content"><?php the_content(); ?></div>
       <?php } /* end while */ ?>
     <?php }else{ /* Si no hay post que mostar debería salir algun mensaje de advertencia */ ?>
-      <div class="general-content"><?php the_content();?></div>
+      <div class="general-content">
+        Ups!
+      </div>
     <?php } ?>
   </div>
 

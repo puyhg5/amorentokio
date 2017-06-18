@@ -1,0 +1,33 @@
+.section-recetas{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+.grid-recetas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.receta-cat{
+  width: 30%;
+}
+.img-receta{
+  width: 100%;
+}
+.text-cat-receta{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container-icon{
+  width: 25px;
+}
+.icon-cat{
+  width: 100%;
+}
+
+@media (max-width: 780px) {
+  .receta-cat{
+    width: 100%;
+  }
+}
